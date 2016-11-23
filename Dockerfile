@@ -10,4 +10,4 @@ RUN git clone https://github.com/athlite/rethinkdb-cli.git
 WORKDIR /rethinkdb-cli
 RUN npm install
 
-ENTRYPOINT node /rethinkdb-cli/bin/cli.js
+ENTRYPOINT ["node", "/rethinkdb-cli/bin/cli.js"]
